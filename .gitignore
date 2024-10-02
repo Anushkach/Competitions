@@ -1,2 +1,7 @@
 /mnt/c/Users/anush/Documents/Competitions/BrisT1D Blood Glucose Prediction/inputs
 /mnt/c/Users/anush/Documents/Competitions/BrisT1D Blood Glucose Prediction/outputs
+BrisT1D Blood Glucose Prediction/inputs/train.csv
+BrisT1D Blood Glucose Prediction/inputs/test.csv
+BrisT1D Blood Glucose Prediction/inputs/sample_submission.csv
+BrisT1D Blood Glucose Prediction/inputs/brist1d.zip
+BrisT1D Blood Glucose Prediction/inputs/activities.txt
