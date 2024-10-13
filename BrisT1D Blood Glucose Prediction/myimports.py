@@ -171,7 +171,7 @@ class XGBLogging(xgb.callback.TrainingCallback):
             for data,metric in evals_log.items():
                 for metric_name, log in metric.items():
                     score=log[-1][0] if isinstance(log[-1], tuple) else log[-1]
-                    logger.info(f"XGBLogging apoch {epoch} dataset {data} {metric_name} {score}")
+                    logger.info(f"XGBLogging epoch {epoch} dataset {data} {metric_name} {score}")
 
         return False
 

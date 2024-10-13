@@ -142,7 +142,7 @@ class ModelTrainer:
     def MakeOfflineModel(self,
                          X,y,ygrp,Xttest,mdl,method,
                          test_preds_req:bool=True,
-                         ftreimp_req:bool=True,
+                         ftreimp_plot_req:bool=True,
                          ntop:int=50,
                          **params):
         """
@@ -191,7 +191,7 @@ class ModelTrainer:
             elif "LGB" in method and self.es_req==True:
                 model.fit(Xtr,ytr,
                           eval_set=[(Xdev,ydev)],
-                          callabacks=[log_evaluation(0),
+                          callbacks=[log_evaluation(0),
                                       early_stopping(stopping_rounds=self.es_iter,
                                                      verbose=False),
                                                 ],
